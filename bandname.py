@@ -20,15 +20,35 @@ prefix = ['b','bl','br',
 		'sc','scr','sh','sk','sp',
 		'w','wh','wr']
 vowel = list("aeiou"*5+"y")
-mid = ['dder','ff','gg','n','nk','nt','mp','pp','pper','pple','ptas','rb','rd','rk','rn','rp','rt','st','tter']
+mid = ['ck',
+       'dder',
+       'f','ff',
+       'gg',
+       'lf','ll','lp',
+       'ml','mp',
+       'n','nk','nt',
+       'pp','pper','pple','ptas',
+       'rb','rd','rk','rn','rp','rt',
+       'sh','st',
+       't','tten','ttle','tter','tting']
 # suffixes that have all the vowels they need
-suffix = ['','','','er','gubbler','ic','in','ington','le','ler','ley','ny','on','ton','tron','ty']
+suffix = ['','','','er','ey',
+          'gubbler',
+          'ic','in','ington',
+          'hole',
+          'kibbler',
+          'le','ler','ley',
+          'n','ny',
+          'on','ord',
+          'tang','ton','tron','ty',
+          'urton',
+          'y']
 # suffixes that need vowels
-vsuffix = ['ng','pple','tang','ting','bbler']
+vsuffix = ['','','ng','pple','ting','bbler']
 # suffixes for adjectives
 suffix_adj = ['','','ing','able','apped','ed','ic']
 # non-pluralised suffixes for band names
-suffix_bn = ['','','er','erer','ic','in','unt','cunt','nut','nib','nip','nunt']
+suffix_bn = ['','','er','e','erer','ic','in','cunt','nut','nib','nip','nunt']
 
 # Generate 20 band names if no number is specified
 if len(sys.argv) > 1:
