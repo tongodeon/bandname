@@ -16,8 +16,10 @@ prefix = ['b','bl','br',
 		'm',
 		'n',
 		'p','pl',
+		'qu',
+		's','sc','scr','sh','sk','sp',
 		't','tr',
-		'sc','scr','sh','sk','sp',
+		'v',
 		'w','wh','wr']
 vowel = list("aeiou"*5+"y")
 mid = ['ck',
@@ -25,10 +27,10 @@ mid = ['ck',
        'f','ff',
        'gg',
        'lf','ll','lp',
-       'ml','mp',
-       'n','nk','nt',
-       'pp','pper','pple','ptas',
-       'rb','rd','rk','rn','rp','rt',
+       'm','mp',
+       'n','gn','nk','nt',
+       'pp','pper','ppet','pple','ptas',
+       'rb','rd','rk','rl','rn','rp','rt',
        'sh','st',
        't','tten','ttle','tter','tting']
 # suffixes that have all the vowels they need
@@ -67,7 +69,9 @@ for i in xrange(times):
 	# collective band name
 	bn = map(random.choice,[prefix,vowel,mid,suffix_bn])
 
+	# join the words and capitalise where appropriate
 	fn,ln,adj,bn = map(lambda x:string.capitalize(string.join(x,'')), [fn,ln,adj,bn])
+	# pluralise the band name
 	bn = bn+'s'
 
 	title = random.choice(['his','her','the','featuring'])
